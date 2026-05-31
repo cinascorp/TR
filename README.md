@@ -54,11 +54,11 @@ $$ \theta(t) = \theta_{current} + \Delta\theta \times k_{smooth} $$
 
 ```javascript
 function lerpA(e, t, a) {
-    return null == e
-      ? (t ?? 0)
-      : null == t
-        ? (e ?? 0)
-        : (e + (((t - e + 540) % 360) - 180) * a + 360) % 360;
+ return null == e
+ ? (t ?? 0)
+ : null == t
+ ? (e ?? 0)
+ : (e + (((t - e + 540) % 360) - 180) * a + 360) % 360;
 }
 ```
 
@@ -176,8 +176,14 @@ $$ THEN \rightarrow \text{Flag as Quantum Anomaly (Stealth Target)} $$
 ## ۴. منطق جبر بول و گیت‌های منطقی
 
 موتور طبقه‌بندی تارا از یک آرایه گیت منطقی قطعی (Deterministic Logic Gate Array) استفاده می‌کند.
-ورودی‌ها: $H$ (ارتفاع)، $V$ (سرعت)، $C$ (کد تماس/Callsign)، $S$ (کد Squawk).
-آستانه‌ها: $H_{low} = 1200$ متر، $V_{slow} = 120$ کیلومتر/ساعت.
+ورودی‌ها:
+$H$ (ارتفاع)، 
+$V$ (سرعت)، 
+$C$ (کد تماس/Callsign)، 
+$S$ (کد Squawk).
+آستانه‌ها: 
+$H_{low} = 1200$ متر،
+$V_{slow} = 120$ کیلومتر/ساعت.
 
 ### ۴.۱. منطق شناسایی پهپاد (Gate D)
 ```
